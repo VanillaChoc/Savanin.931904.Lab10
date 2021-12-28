@@ -1,0 +1,143 @@
+body {
+    background: black;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#Curtain {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease-out;
+}
+
+#Curtain:hover {
+    transform: translate(-50%, -55%);
+}
+
+#Lamp {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: 50px;
+}
+
+#Lamp div {
+    position: absolute;
+}
+
+#Light {
+	width: 30px;
+	height: 0;
+	border-left: 470px solid transparent;
+	border-right: 470px solid transparent;
+	border-bottom: 890px solid yellow;
+    left: calc(50% - 485px);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+
+    pointer-events: none;
+}
+#L1 {
+	border-bottom: 60px solid teal;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 50px;
+    left: calc(50% - 50px);
+}
+#L2 {
+    width: 2px;
+    height: 85px;
+    background: gray;
+    left: calc(50% - 22px);
+    top: 40px;
+    transition: transform 0.1s ease-out;
+}
+#L3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gold;
+    left: calc(50% - 26px);
+    top: 120px;
+    transition: transform 0.1s ease-out;
+}
+#L4 {
+    width: 6px;
+    height: 70px;
+    background: lightgray;
+    left: calc(50% - 3px);
+    top: 60px;
+}
+#L5 {
+    width: 24px;
+    height: 16px;
+    border-radius: 50%;
+    background: teal;
+    left: calc(50% - 12px);
+    top: 126px;
+}
+#L6 {
+    width: 12px;
+    height: 120px;
+    background: lightgray;
+    left: calc(50% - 6px);
+    top: 134px;
+}
+#L7 {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: teal;
+    left: calc(50% - 12px);
+    top: 242px;
+}
+#L8 {
+    width: 60px;
+    height: 20px;
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: lightgray;
+    left: calc(50% - 30px);
+    top: 254px;
+}
+
+#PerformanceElem {
+    position: absolute;
+    width: calc(80vh);
+    height: 400px;
+    left: calc(50% - 40vh);
+    bottom: 30px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+#PerformanceElem img {
+    position: absolute;
+    bottom: 0;
+}
+
+#Hat {
+    left: 70%;
+    width: 28%;
+}
+
+#Magican {
+    width: 64%;
+    right: 30%;
+}
+
+#Bird, #Rabbit {
+    left: calc(76%);
+    bottom: 20px !important;
+    width: 15%;
+    transition: transform 0.5s ease-out;
+}
